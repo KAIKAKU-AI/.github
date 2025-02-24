@@ -1,26 +1,26 @@
-name: Issue Report
-description: Report a bug or request a new feature
-title: "[ISSUE] <title>"
-labels: ["triage"]
+name: "🐛 Bug Report"
+description: "Report an issue or unexpected behavior"
+title: "[BUG] <title>"
+labels: ["bug", "triage"]
 body:
-  - type: dropdown
-    id: issue_type
-    attributes:
-      label: "Issue Type"
-      description: "What type of issue is this?"
-      options:
-        - 🐛 Bug Report
-        - ✨ Feature Request
-        - 🔧 Improvement
-    validations:
-      required: true
-
   - type: textarea
     id: summary
     attributes:
       label: "Summary"
-      description: "Provide a brief summary of the issue or feature request."
-      placeholder: "A clear and concise summary of what this issue is about."
+      description: "A concise description of the issue."
+      placeholder: "Describe the bug in one or two sentences."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide a step-by-step guide to reproduce the issue."
+      placeholder: |
+        1. Navigate to...
+        2. Click on...
+        3. Observe the issue...
     validations:
       required: true
 
@@ -28,47 +28,29 @@ body:
     id: expected_behavior
     attributes:
       label: "Expected Behavior"
-      description: "For bugs, describe what should have happened."
-      placeholder: "Describe the expected behavior."
+      description: "Describe what should have happened."
+      placeholder: "The expected result is..."
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: actual_behavior
     attributes:
       label: "Actual Behavior"
-      description: "For bugs, describe what actually happened."
-      placeholder: "Describe the actual behavior."
+      description: "Describe what actually happened."
+      placeholder: "The observed result is..."
     validations:
-      required: false
+      required: true
 
   - type: textarea
-    id: reproduction_steps
+    id: environment
     attributes:
-      label: "Steps to Reproduce (For Bugs)"
-      description: "Provide step-by-step instructions to reproduce the bug."
+      label: "Environment"
+      description: "Provide system details (OS, browser, version, etc.)."
       placeholder: |
-        1. Navigate to...
-        2. Click on...
-        3. See error...
-    validations:
-      required: false
-
-  - type: textarea
-    id: feature_details
-    attributes:
-      label: "Feature Details (For Feature Requests)"
-      description: "Explain the feature request, including its purpose and potential impact."
-      placeholder: "Describe the feature and why it is needed."
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: "Additional Context"
-      description: "Any additional details, screenshots, logs, or context to support this issue."
-      placeholder: "Add any other context about the problem or feature request here."
+        - OS: Windows/Mac/Linux
+        - Browser: Chrome/Firefox/Safari
+        - Version: x.x.x
     validations:
       required: false
 
@@ -76,9 +58,8 @@ body:
     id: checklist
     attributes:
       label: "Checklist"
-      description: "Ensure that the issue is well-defined."
       options:
         - label: "I have searched for similar issues"
           required: true
-        - label: "I have provided all necessary details"
+        - label: "I have provided sufficient information"
           required: true
