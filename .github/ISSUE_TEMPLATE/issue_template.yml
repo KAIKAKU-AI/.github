@@ -1,0 +1,84 @@
+name: Issue Report
+description: Report a bug or request a new feature
+title: "[ISSUE] <title>"
+labels: ["triage"]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: "Issue Type"
+      description: "What type of issue is this?"
+      options:
+        - 🐛 Bug Report
+        - ✨ Feature Request
+        - 🔧 Improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "Provide a brief summary of the issue or feature request."
+      placeholder: "A clear and concise summary of what this issue is about."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "For bugs, describe what should have happened."
+      placeholder: "Describe the expected behavior."
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Actual Behavior"
+      description: "For bugs, describe what actually happened."
+      placeholder: "Describe the actual behavior."
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Steps to Reproduce (For Bugs)"
+      description: "Provide step-by-step instructions to reproduce the bug."
+      placeholder: |
+        1. Navigate to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: false
+
+  - type: textarea
+    id: feature_details
+    attributes:
+      label: "Feature Details (For Feature Requests)"
+      description: "Explain the feature request, including its purpose and potential impact."
+      placeholder: "Describe the feature and why it is needed."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Any additional details, screenshots, logs, or context to support this issue."
+      placeholder: "Add any other context about the problem or feature request here."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checklist"
+      description: "Ensure that the issue is well-defined."
+      options:
+        - label: "I have searched for similar issues"
+          required: true
+        - label: "I have provided all necessary details"
+          required: true
