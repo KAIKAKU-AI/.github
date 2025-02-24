@@ -1,4 +1,7 @@
-![KAIKAKU.AI Logo](https://github.com/KAIKAKU-AI/.github-private/assets/46272051/4f0b89d3-d1d6-47f5-8c18-1083e73eef6c)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/db7fb349-5704-40cb-810b-3a06ac78d245">
+  <img src="https://github.com/user-attachments/assets/1060b0c8-f3e9-42e6-b0fb-4a7d019892b8" alt="KAIKAKU.AI Logo">
+</picture>
 
 # Hi there 👋
 
