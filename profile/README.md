@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/db7fb349-5704-40cb-810b-3a06ac78d245">
-  <img src="https://github.com/user-attachments/assets/1060b0c8-f3e9-42e6-b0fb-4a7d019892b8" alt="KAIKAKU.AI Logo">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/f3237139-d479-41e8-85bd-8af97b270b0b">
+  <img src="https://github.com/user-attachments/assets/2bd12eb4-74b1-4e98-91a5-aa7a96285840" alt="KAIKAKU.AI Logo">
 </picture>
 
 # Hi there 👋
